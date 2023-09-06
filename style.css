@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.container{
+    
+    min-height: 100vh;
+    background:linear-gradient(#fdfffc,#0c0cc3);
+    padding: 50px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 545px;
+    background:linear-gradient(#fdfffc,#010103);
+    margin: 100px auto;
+    padding: 40px 30px 70px;
+    border-radius: 45px;   
+    border: 4px solid #494949 !important;
+}
+
+.todo-app:hover
+{
+color: #010101 !important;
+background: #0c0b08;
+border-color: #02020c !important;
+background:linear-gradient(#010103,#fdfffc);
+transition: all 0.8s ease 0s;
+box-shadow: 10px 10px 1px black ;
+
+}
+
+
+.todo-app h2{
+  color: #c77b0a;
+  display:flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.todo-app h2 img{
+  width: 45px;
+  margin-left: 10px;
+  
+}
+
+.row{
+  
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  border-radius: 40px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  background-color: #44d310;
+
+}
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px ;
+}
+
+button
+{
+  border: #020213;
+  outline: none;
+  outline: none;
+  padding: 16px 50px;
+  color: #342626;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: white;
+}
+
+button:hover
+{
+ background-color: red;
+}
+
+ul li
+{ list-style: none ;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://www.seekpng.com/png/full/13-134240_broken-red-heart-emoji-png-broken-heart-emoji.png);
+  top: 8px;
+  left: 16px;
+
+
+}
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before
+{
+   color: #666;
+   background-image: url(https://pluspng.com/img-png/heart-png-heart-png-image-38773-1024.png);
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  color: #a40909;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+
+}
+
+ul li span:hover{
+  background: #eaeaef;
+}
